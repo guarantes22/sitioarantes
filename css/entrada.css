@@ -1,0 +1,67 @@
+.entrada-bg {
+  background-image: linear-gradient(rgb(47, 102, 8), rgb(20, 43, 3));
+  box-shadow: inset 0 -40px #fff;
+}
+
+.entrada {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  box-sizing: border-box;
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.entrada img {
+  height: 100%;
+  object-fit: cover;
+}
+.entrada-conteudo {
+  align-self: end;
+  padding-bottom: 80px;
+}
+.entrada h1 {
+  margin-bottom: 22px;
+  font-size: 54px;
+  line-height: 1;
+}
+.entrada p {
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+}
+.entrada a {
+  padding: 16px 32px;
+  background: linear-gradient(#34530c, #67932e);
+  display: inline-block;
+  border-radius: 4px;
+}
+.entrada a:hover {
+  background: linear-gradient(#3e640e, #6fa529);
+}
+
+@media (max-width: 1200px) {
+  .entrada h1 {
+    font-size: 40px;
+  }
+  .entrada p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 800px) {
+  .entrada h1 {
+    padding-top: 40px;
+    font-size: 43px;
+  }
+  .entrada {
+    grid-template-columns: 1fr;
+  }
+  .entrada p {
+    font-size: 12px;
+  }
+  .entrada-conteudo {
+    padding-bottom: 0px;
+  }
+}

@@ -1,0 +1,70 @@
+.header-bg {
+  background-image: linear-gradient(rgb(15, 171, 39), rgb(47, 102, 8));
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  box-sizing: border-box;
+  padding-top: 20px;
+  padding-bottom: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 1200px;
+}
+.header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.header-menu a {
+  display: inline-block;
+  color: var(--cor1);
+  padding: 16px 0px;
+  position: relative;
+  text-transform: uppercase;
+}
+.header-menu a::before {
+  content: "::";
+  padding: 4px;
+}
+.header-menu a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0px;
+  background: var(--cor1);
+  margin-top: 4px;
+  transition: 0.3s;
+  position: absolute;
+}
+.header-menu a:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .header-menu {
+    gap: 20px;
+  }
+  .header-menu a {
+    padding: 12px 12px;
+  }
+}
+@media (max-width: 600px) {
+  .header-menu {
+    gap: 12px;
+  }
+  .header-menu a {
+    padding: 8px 8px;
+  }
+}
